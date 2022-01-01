@@ -1,0 +1,14 @@
+<html>
+<body>
+<script>
+webSocket = new WebSocket('ws://localhost:8765');
+
+webSocket.onopen = function (event) {
+  webSocket.send(JSON.stringify({ intent: "get-game", code: "123"}));
+};
+webSocket.onmessage = function (event) {
+  console.log(event.data);
+}
+</script>
+</body>
+</html>

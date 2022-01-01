@@ -1,0 +1,48 @@
+<html>
+<body>
+<script>
+ws1 = new WebSocket('ws://localhost:8765');
+var wsps = [];
+
+ws1.onopen = function (event) {
+  ws1.send(JSON.stringify({ intent: "create-game", code: "123", question_set_id: 1, impostor_count: 1, game_map: 'Game' }));
+};
+
+ws1.onmessage = async function (event) {
+	for (i = 0; i < 3; i++) {
+		let s = new WebSocket('ws://localhost:8765');
+		s.onopen = function(event) {
+			s.send(JSON.stringify({ intent: "join-game", code: "123", name: "Test"+i, id:i }));
+		}
+		s.onmessage = function(event) {
+			console.log(event.data);
+		}
+		wsps.push(s);
+		await new Promise(r => setTimeout(r, 100));
+	}
+	console.log(event.data);
+}
+	
+function start() {
+	ws2 = new WebSocket('ws://localhost:8765');
+	ws2.onopen = function(event) {
+		ws2.send(JSON.stringify({ intent: "start-game", code: "123"}));
+	}
+	ws2.onmessage = function(event) {
+		console.log(event.data);
+	}
+}
+function meet() {
+	wsps[0].send(JSON.stringify({ cmd: "r"}));
+}
+function castVotes() {
+	wsps[0].send(JSON.stringify({ cmd: "v", whom: 2}));
+	wsps[1].send(JSON.stringify({ cmd: "v", whom: 2}));
+	wsps[2].send(JSON.stringify({ cmd: "v", whom: 2}));
+}
+</script>
+<button onclick="start()">Start</button>
+<button onclick="meet()">Meet</button>
+<button onclick="castVotes()">Vote</button>
+</body>
+</html>
