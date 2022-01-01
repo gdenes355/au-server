@@ -36,7 +36,7 @@ This server uses [WebSocket](https://en.wikipedia.org/wiki/WebSocket) to communi
 The server listens to websocket requets on port `8765`.
 The initial command should always contain a JSON with an `intent` field. E.g.
 ```json
-{intent: "create-game", code: "123", question_set_id: 1, impostor_count: 1, game_map: "Game"}
+{"intent": "create-game", "code": "123", "question_set_id": 1, "impostor_count": 1, "game_map": "Game"}
 ```
 
 ### Admin intents
@@ -61,10 +61,10 @@ The Unity Player always uses a `join-game` intent which specifies the game to jo
 
 ```json
 { 
-    intent: "join-game", 
-    code: "<code e.g. 123>", 
-    name: "<player name; string>", 
-    id: <integer player id, e.g. 1> 
+    "intent": "join-game", 
+    "code": "<code e.g. 123>", 
+    "name": "<player name; string>", 
+    "id": <integer player id, e.g. 1> 
 }
 ```
 
