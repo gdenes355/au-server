@@ -51,11 +51,11 @@ def meet_to_vote(game, player: AUPlayer = None):
         player.mask = player.mask | AUPlayer.Mask.CALLED_VOTE
 
     game.state = AUGame.State.VOTING
-    game.voting_started = datetime.now()
+    game.voting_started = datetime.datetime.now()
 
 def stop_voting(game):
     print("Voting stopped")
-    game.voting_started = datetime.now() - datetime.timedelta(seconds=76)
+    game.voting_started = datetime.datetime.now() - datetime.timedelta(seconds=76)
 
 def process_game(game):
     imp_count = 0
@@ -76,7 +76,7 @@ def process_game(game):
             print('impostors win', game)
     elif game.state == AUGame.State.VOTING:
         finished = all(((p.voted_against > AUPlayer.NOT_VOTED) or (not p.can_vote())) for p in game.players)
-        time_in_voting = datetime.now() - game.voting_started
+        time_in_voting = datetime.datetime.now() - game.voting_started
         if finished or time_in_voting.total_seconds() > VOTING_TIMEOUT:
             # accumulate votes
             votes = []
