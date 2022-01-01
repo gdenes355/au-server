@@ -12,6 +12,17 @@ The question set used by the server is normally fetched from a database through 
 
 There are some manual tests available to verify that the server behaves correctly. These are all in the `manual-tests` folder, with a readme file to explain the testing process.
 
+## Getting started
+Make sure you have the correct packages from `requirements.txt` installed. If you have Pip, you can just run 
+```
+pip install -r requirements.txt
+```
+To start the server, just run 
+```
+python au_server.py
+```
+
+
 
 ## Game state
 A game goes through a number of states in its lifecycle
