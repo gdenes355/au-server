@@ -1,0 +1,203 @@
+{
+  "typ": "qs",
+  "questions": [
+    {
+      "type": "mc",
+      "Question": "Which of these is not a loop?",
+      "Options": [
+        "count-controlled repetition",
+        "post-test repetition",
+        "expert system",
+        "infinite repetition"
+      ],
+      "CorrectOption": 2
+    },
+    {
+      "type": "mc",
+      "Question": "A data type that contains upper case, lower case letters or numbers or punctuation. An ordered sequence of characters!",
+      "Options": [
+        "int",
+        "str",
+        "float",
+        "bool"
+      ],
+      "CorrectOption": 1
+    },
+    {
+      "type": "mc",
+      "Question": "Which of these is not a valid way to describe an algorithm?",
+      "Options": [
+        "flowcharts",
+        "persecode",
+        "pseudocode",
+        "plain English"
+      ],
+      "CorrectOption": 1
+    },
+    {
+      "type": "mc",
+      "Question": "What does SSD stand for?",
+      "Options": [
+        "Solid Disk Drive",
+        "Solid State Drive",
+        "Solid System Drive",
+        "Service System Drive"
+      ],
+      "CorrectOption": 1
+    },
+    {
+      "type": "bf",
+      "Question": "What is 10010101 in denary?",
+      "Answer": "149",
+      "Answers": [
+        "149"
+      ]
+    },
+    {
+      "type": "bf",
+      "Question": "What is 11011001 in denary?",
+      "Answer": "217",
+      "Answers": [
+        "217"
+      ]
+    },
+    {
+      "type": "bf",
+      "Question": "What is 0xFA in binary?",
+      "Answer": "11111010",
+      "Answers": [
+        "11111010",
+        "1111 1010"
+      ]
+    },
+    {
+      "type": "bf",
+      "Question": "What is 0xFE in denary?",
+      "Answer": "254",
+      "Answers": [
+        "254"
+      ]
+    },
+    {
+      "type": "bf",
+      "Question": "1100 1011 in hexadecimal is:",
+      "Answer": "CB",
+      "Answers": [
+        "CB",
+        "0xCB"
+      ]
+    },
+    {
+      "type": "bf",
+      "Question": "The CPU stands for _____ _____ ____",
+      "Answer": "central processing unit",
+      "Answers": [
+        "central processing unit"
+      ]
+    },
+    {
+      "type": "bf",
+      "Question": "The RAM is the ______ _____ _____",
+      "Answer": "random access memory",
+      "Answers": [
+        "random access memory"
+      ]
+    },
+    {
+      "type": "bf",
+      "Question": "What is the less than or equal to operator in Python?",
+      "Answer": "<=",
+      "Answers": [
+        "<="
+      ]
+    },
+    {
+      "type": "bf",
+      "Question": "What is the greater than or equal to operator in Python?",
+      "Answer": ">=",
+      "Answers": [
+        ">="
+      ]
+    },
+    {
+      "type": "mc",
+      "Question": "In flowcharts, you would NOT see a diamond when trying to implement...?",
+      "Options": [
+        "selection",
+        "condition controlled repetition",
+        "a process",
+        "count controlled repetition"
+      ],
+      "CorrectOption": 2
+    },
+    {
+      "type": "bf",
+      "Question": "When the number of bits reserved for the result of a calculation is not enough, it is called an ________.",
+      "Answer": "overflow",
+      "Answers": [
+        "overflow"
+      ]
+    },
+    {
+      "type": "mc",
+      "Question": "Not one of Santa's reindeer.",
+      "Options": [
+        "Cupid",
+        "Donner",
+        "Turing",
+        "Vixen"
+      ],
+      "CorrectOption": 2
+    },
+    {
+      "type": "bf",
+      "Question": "What Python keyword would you use for repetition in Python?",
+      "Answer": "while",
+      "Answers": [
+        "while",
+        "for"
+      ]
+    },
+    {
+      "type": "bf",
+      "Question": "Property of primary memory; it forgets data once it loses power:",
+      "Answer": "volatile",
+      "Answers": [
+        "volatile"
+      ]
+    },
+    {
+      "type": "mc",
+      "Question": "Which operator checks if two values are equal?",
+      "Options": [
+        "=",
+        "==",
+        "!=",
+        "<>"
+      ],
+      "CorrectOption": 1
+    },
+    {
+      "type": "mc",
+      "Question": "Which of the following is the correct way to input a number in Python?",
+      "Options": [
+        "num = input",
+        "num = (input)",
+        "num = int(input())",
+        "num = input()"
+      ],
+      "CorrectOption": 2
+    },
+    {
+      "type": "mc",
+      "Question": "Which of the following is the correct way to input a string in Python?",
+      "Options": [
+        "name = input",
+        "name = (input)",
+        "name = int(input())",
+        "name = input()"
+      ],
+      "CorrectOption": 3
+    }
+  ]
+}
